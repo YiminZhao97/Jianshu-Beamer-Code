@@ -1,0 +1,93 @@
+\documentclass[11pt]{beamer}                                                                                                                 \usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{ctex}
+
+\begin{document}
+%\begin{frame}
+	\title[Work Summary]{Work Summary}
+	\author[Author]{Author} % 显示作者
+	\institute[XXX]{XXX  University} % 设置学院机构
+	\date{\today}  % 显示日期
+	\logo{\includegraphics[width=1.8cm,height=1.8cm]{1.png}}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\section[Contents]{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {
+	\frametitle{\secname}
+	\tableofcontents
+}
+\AtBeginSubsection[] {
+	\frame<handout:0> {
+		\frametitle{Contents}
+		\tableofcontents[current,currentsubsection]
+	}
+}
+
+\section{Section1}
+\subsection{1.1}
+\begin{frame}[fragile]
+	\frametitle{A}
+	\begin{figure}[h]%%图
+		\centering  %插入的图片居中表示
+		\includegraphics[width=0.9\linewidth]{Result_heatmap.png}  
+		\caption{Pearson Correlation Heatmap}  %图片的名称
+	\end{figure}
+\end{frame}
+
+\subsection{1.2}
+\begin{frame}[fragile]
+	\frametitle{B}
+	\begin{itemize}
+		\item 1 Hello World
+		\item 2 Hello World
+		\item 3 Hello World
+		\item 4 Hello World
+	\end{itemize}
+\end{frame}
+
+\section{Section2}
+\subsection{2.1}
+\begin{frame}[fragile]
+	\frametitle{C}
+	\begin{block}{定义}
+		定义:
+	\end{block}
+\end{frame}
+
+\subsection{2.2}
+\begin{frame}[fragile]
+	\frametitle{D}
+		\begin{block}{Scaling}
+		$$ x^* = \frac{x - x_{min}}{x_{max} - x_{min}} $$
+	\end{block}
+\end{frame}
+
+\section{Section3}
+\subsection{3.1}
+\begin{frame}[fragile]
+	\frametitle{E}
+	\begin{table}[]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			index & yD & y2 \\ \hline
+			x1          &      3.347&    1.330\\ \hline
+			x2          &      828.885&    172.967\\ \hline
+			x3 &      0.819&    0.492\\ \hline
+			x4 &      227.881&    63.610\\ \hline
+		\end{tabular}
+		\caption{表格}
+	\end{table}
+\end{frame}
+
+\subsection{3.2}
+\begin{frame}[fragile]
+	\frametitle{F}
+\end{frame}
+\end{document}
